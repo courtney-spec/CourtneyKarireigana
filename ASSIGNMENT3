@@ -1,0 +1,22 @@
+print("=== World Cup 2026 Winner Predictor ===")
+
+while True:
+    country = input("Enter a country (or type 'quit' to exit): ")
+
+    if country.lower() == "quit":
+        print("Exiting the program...")
+        break
+
+    if country.strip() == "":
+        print("You did not enter a country. Try again.")
+        continue
+
+    if country.lower() == "uganda":
+        pass  # Placeholder for future logic
+
+    if country.lower() in ["brazil", "argentina", "france", "england", "spain"]:
+        print(country, "has a high chance of winning the 2026 World Cup!")
+    else:
+        print(country, "has a chance, but is not among the top favorites.")
+
+print("Thank you for using the World Cup 2026 Winner Predictor!")
